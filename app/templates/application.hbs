@@ -4,4 +4,12 @@
 <WelcomePage />
 {{!-- Feel free to remove this! --}}
 
+{{#unless (or true false)}}
+This should be fine
+{{/unless}}
+
+{{#unless (or (and true false) false)}}
+This is a mess
+{{/unless}}
+
 {{outlet}}
